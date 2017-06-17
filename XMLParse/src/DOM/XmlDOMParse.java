@@ -1,0 +1,5 @@
+package DOM;
+
+class XmlDOMParse {
+
+}
