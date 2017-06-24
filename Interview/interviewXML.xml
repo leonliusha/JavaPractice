@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contacts
+xmlns="http://www.w3school.com.cn"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3school.com.cn SchemaPractice.xsd">
+
+<Person id="1" age="30">
+	<name>John Smith</name>
+	<address>
+		<phone>33101</phone>
+		<address1>abcd</address1>
+	</address>
+	<score>80</score>
+</Person>
+
+<Person id="2" age="18">
+	<name>Amend Doe</name>
+	<address/>
+	<score>55</score>
+</Person>
+
+<Person id="3" age="35">
+	<name>Allen Yeh</name>
+	<score>10</score>
+	<address>
+		<address1>abcd</address1>
+		<phone>331</phone>
+	</address>
+</Person>
+</Contacts>

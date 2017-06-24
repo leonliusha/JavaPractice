@@ -18,13 +18,15 @@ public class ImmutableClassTest {
         for(int i=0;i<people.getFriends().length;i++){
             System.out.print(people.getFriends()[i]);
         }
+
+
     }
 }
 
 final class People{
-    private final String name;
-    private final String age;
-    private final int[] friends;
+    private String name;
+    private String age;
+    private int[] friends;
     public People(String name, String age, int[] friends){
         this.name = name;
         this.age = age;
@@ -37,6 +39,6 @@ final class People{
         return age;
     }
     public int[] getFriends(){
-        return friends.clone();
+        return friends;
     }
 }
