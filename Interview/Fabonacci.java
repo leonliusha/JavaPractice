@@ -4,12 +4,10 @@ public class Fabonacci {
 
 	public int fabonacciAlgorithm(int num){
 		if(num == 1){
-			//System.out.println("1");
 			return 1;
 		}
 		else if(num == 2)
 		{
-			//System.out.println("1");
 			return 1;
 		}
 		else {

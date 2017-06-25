@@ -15,21 +15,11 @@ public class ReadFile {
 		//Map<String,String> fileMap = new HashMap<String,String>();
 		List<FileObject> fileList = new ArrayList<FileObject>();
 		File file = new File(filepath);
-		if(!file.isDirectory()){
-			//System.out.println("file");
-			//System.out.println("path ="+file.getPath());
-			//System.out.println("absolute path="+file.getAbsolutePath());
-			//System.out.println("name="+file.getName());
-		}
-		else if(file.isDirectory()){
-			//System.out.println("Directory");
+		if(file.isDirectory()){
 			String[] filelist=file.list();
 			for(int i=0;i<filelist.length;i++){
 				File readfile = new File(filepath+"\\"+filelist[i]);
 				if(!readfile.isDirectory()){
-					//System.out.println("path ="+readfile.getPath());
-					//System.out.println("absolute path="+readfile.getAbsolutePath());
-					//System.out.println("name="+readfile.getName());
 					FileObject fo = new FileObject();
 					fo.setDate(FileNameToDate(readfile.getName()));
 					fo.setPath(readfile.getAbsolutePath());
@@ -41,7 +31,6 @@ public class ReadFile {
 			}
 		}
 		return fileList;
-		
 	}
 	
 	public static String FileNameToDate(String fileName){
